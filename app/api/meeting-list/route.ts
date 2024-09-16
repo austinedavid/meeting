@@ -20,9 +20,7 @@ export async function POST(req: NextRequest) {
 }
 
 // get all the meetings here
-export async function GET(req: Request) {
-  const body = await req.json();
-  console.log(body);
+export async function GET() {
   try {
     const allMeetings = await prisma.meetingRooms.findMany();
     return new Response(JSON.stringify(allMeetings), { status: 200 });
