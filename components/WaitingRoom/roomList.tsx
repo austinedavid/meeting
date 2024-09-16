@@ -10,7 +10,7 @@ interface ImeetingList {
 }
 
 const RoomList = () => {
-  const { data, status } = useSession();
+  const { status } = useSession();
   const client = useStreamVideoClient();
   const [allMeetings, setAllMeetings] = useState<ImeetingList[]>();
   const router = useRouter();

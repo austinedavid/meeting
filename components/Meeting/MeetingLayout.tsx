@@ -24,7 +24,7 @@ const MeetingLayout = () => {
           {isMeetingSetup ? (
             <MeetingSetup setIsMeetingSetup={setIsMeetingSetup} />
           ) : (
-            <MeetingProper setIsMeetingSetup={setIsMeetingSetup} />
+            <MeetingProper />
           )}
         </StreamCall>
       </StreamTheme>

@@ -26,7 +26,6 @@ const SignUp: React.FC<{
         method: "POST",
         body: JSON.stringify({ email, password, username: username.trim() }),
       }).then((result) => {
-        const body = result.json();
         if (result.ok) {
           setRegister(false);
           alert("registing  successful");

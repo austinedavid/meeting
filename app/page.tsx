@@ -1,5 +1,4 @@
 import StartExp from "@/components/StartExp";
-import RoomList from "@/components/WaitingRoom/roomList";
 import React from "react";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/libs/AuthOptions";

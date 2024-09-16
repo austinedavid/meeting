@@ -7,9 +7,7 @@ import {
 import { MdGroups2 } from "react-icons/md";
 import { useRouter } from "next/navigation";
 
-const MeetingProper: React.FC<{
-  setIsMeetingSetup: React.Dispatch<React.SetStateAction<boolean>>;
-}> = ({ setIsMeetingSetup }) => {
+const MeetingProper = () => {
   const [showUser, setShowUser] = useState<boolean>(false);
   const router = useRouter();
   return (
