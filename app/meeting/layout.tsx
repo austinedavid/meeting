@@ -1,18 +1,18 @@
-import StartExp from "@/components/StartExp";
-import RoomList from "@/components/WaitingRoom/roomList";
+import StreamProvider from "@/providers/StreamProvider";
 import React from "react";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/libs/AuthOptions";
 import { redirect } from "next/navigation";
 
-const Home = async () => {
+const Layout = async ({ children }: { children: React.ReactNode }) => {
   const session = await getServerSession(authOptions);
   if (!session?.user) return redirect("/authentication");
   return (
-    <div>
-      <StartExp />
-    </div>
+    <>
+      <StreamProvider>
+        <main>{children}</main>
+      </StreamProvider>
+    </>
   );
 };
-
-export default Home;
+export default Layout;
