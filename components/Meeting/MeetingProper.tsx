@@ -46,7 +46,7 @@ const MeetingProper = () => {
       <div className=" relative w-full h-screen text-white overflow-hidden pt-4">
         <LayoutComponent {...componentProps} />
       </div>
-      <div className=" fixed bottom-0 px-2  gap-4  z-50 w-full flex items-center justify-center ">
+      <div className=" fixed bottom-2 rounded-xl px-2  gap-4 left-1/2 -translate-x-1/2  z-50 w-fit md:px-4 bg-slate-700 flex items-center justify-center ">
         <CallControls
           onLeave={() => {
             router.push("/meeting");
