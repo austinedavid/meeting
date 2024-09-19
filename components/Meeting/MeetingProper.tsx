@@ -14,7 +14,7 @@ const LayoutMap = {
     component: SpeakerLayout,
     title: "Speaker layout with spotlight",
     props: {
-      participantsBarPosition: "right" as "right",
+      participantsBarPosition: "right" as const,
     },
   },
   PaginatedGrid: {
