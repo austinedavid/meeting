@@ -8,7 +8,7 @@ export async function POST(req: Request) {
       method: "POST",
       body: new URLSearchParams({
         grant_type: "authorization_code",
-        code: "tHtu1stl7vkcyqoIKFdRYmLr8EKdeMFGQ",
+        code: "Sd9MnypGChP6EwYGyHPTUu5eic8wUE28A",
         redirect_uri: "http://localhost:3000/teacher",
       }),
       headers: {
